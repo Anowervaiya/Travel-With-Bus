@@ -22,12 +22,30 @@
         font-weight: 400;
         font-style: normal;
       }
+
+      hr.style18 {
+        height: 100px;
+        border-style: solid;
+        border-color: #1dd100;
+        border-width: 3px 0 0 0;
+        border-radius: 100px;
+      }
+      /* hr.style18:before {
+        display: block;
+        content: "";
+        height: 30px;
+        margin-top: -31px;
+        border-style: solid;
+        border-color: red;
+        border-width: 0 0 1px 0;
+        border-radius: 20px;
+      } */
     </style>
   </head>
-  <body class="poppins-regular">
+  <body>
     <!-- navigation -->
 
-    <section>
+    <section class="my-5">
       <div class="container mx-auto">
         <div class="navbar bg-base-100">
           <div class="navbar-start">
@@ -58,9 +76,7 @@
                 <li><a>Search</a></li>
               </ul>
             </div>
-            <a class="text-3xl font-semibold text-[#030712]"
-              >Anower Poribohon</a
-            >
+            <a class="text-4xl font-bold text-[#030712]">Anower Poribohon</a>
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
@@ -104,7 +120,85 @@
       </div>
     </section>
 
-    <main></main>
+    <main class="container mx-auto">
+      <!-- offer section  -->
+      <section class="container mx-auto">
+        <h1 class="text-5xl text-center mt-24 mb-24">Best offers for you</h1>
+        <div class="flex gap-3">
+          <!-- 15% off part -->
+          <div class="bg-[#FFBF0F] flex justify-between p-12 rounded-xl w-1/2">
+            <div class="flex flex-col justify-center items-center">
+              <h1 class="text-4xl font-extrabold">15% OFF</h1>
+              <p class="text-xl font-light">on your next purchase</p>
+              <p class="text-xl font-light text-gray-500">
+                use by January 2024
+              </p>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <h1 class="text-3xl font-bold">NEW15</h1>
+              <p class="text-xl font-light text-gray-500">Coopon Code</p>
+            </div>
+          </div>
+          <!-- 20% off part -->
+          <div class="bg-[#F78C9C] flex justify-between p-12 rounded-xl w-1/2">
+            <div class="flex flex-col justify-center items-center">
+              <h1 class="text-4xl font-extrabold">20% OFF</h1>
+              <p class="text-xl font-light">on your next purchase</p>
+              <p class="text-xl font-light text-gray-500">
+                use by January 2024
+              </p>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <h1 class="text-3xl font-bold">NEW15</h1>
+              <p class="text-xl font-light text-gray-500">Coopon Code</p>
+            </div>
+          </div>
+        </div>
+        <!-- button  -->
+        <div class="text-center mt-20 mb-20">
+          <button
+            class="btn text-[#1DD100] border border-[#1DD100] bg-white rounded-lg font-bold"
+          >
+            See All Offer
+          </button>
+        </div>
+      </section>
+      <!-- anower paribohon section  -->
+      <section class="bg-[#F7F8F8] rounded-t-[50px]">
+        <hr class="style18" />
+        <div class="py-[120px] px-[135px]">
+          <!-- heading -->
+          <div>
+            <h1 class="text-5xl text-center font-semibold">Anower Poribohon</h1>
+            <p class="text-2xl text-center text-gray-500 font-light mt-10 mb-8">
+              Yes, you can run unit tests and view the results directly within
+              the app. The integrated <br />
+              testing features allow for a streamlined .
+            </p>
+          </div>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <img src="images/bus-logo.png " alt="" />
+                </div>
+                <!-- set number  -->
+                <button class="btn bg-[#1DD10026] hover:bg-transparent">
+                  <img src="images/seat-green.png" alt="" />
+                  <h1><span>40</span> Seats left</h1>
+                </button>
+                <div>
+                  <h1>Anower Poribohon</h1>
+                  <p>Coach-009-WEB ! AC_Business</p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
     <script src="script/utility.js"></script>
     <script src="script/index.js"></script>
